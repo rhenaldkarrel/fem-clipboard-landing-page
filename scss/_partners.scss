@@ -1,0 +1,25 @@
+.partners {
+
+    .container__lg {
+        margin: auto;
+        text-align: center;
+
+        @include breakpoint(large) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include breakpoint-down(large) {
+                &:not(:last-child) {
+                    margin-bottom: 4.0625rem; // 65px   
+                }
+            }
+        }
+    }
+}

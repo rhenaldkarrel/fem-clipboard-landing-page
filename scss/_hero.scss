@@ -1,0 +1,30 @@
+.hero {
+    text-align: center;
+    background-image: url('../images/bg-header-mobile.png');
+    background-size: cover;
+    background-position: top center;
+
+    @include breakpoint(medium) {
+        background-image: url('../images/bg-header-desktop.png');
+    }
+
+    
+
+    &__logo {
+        margin-bottom: 4.375rem;
+    }
+
+    button {
+        @include breakpoint-down(small) {
+            width: 100%;
+        }
+    }
+
+    button.cyan {
+        margin-bottom: 1.25rem;
+
+        @include breakpoint(small) {
+            margin-right: 1rem;
+        }
+    }
+}

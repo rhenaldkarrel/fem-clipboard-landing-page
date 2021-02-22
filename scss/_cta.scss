@@ -1,0 +1,17 @@
+.cta {
+    .container {
+        text-align: center;
+    }
+
+    button.cyan {
+        margin-right: 1rem;
+    }
+
+    button {
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-down(small) {
+            width: 100%;
+        }
+    }
+}

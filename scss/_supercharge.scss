@@ -1,0 +1,42 @@
+.supercharge {
+    .container {
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    &__columns {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.875rem;
+
+        @include breakpoint(large) {
+            display: flex;
+        }
+    }
+
+    &__column {
+        text-align: center;
+
+        @include breakpoint(large) {
+            flex: 1;
+        }
+    }
+
+    &__column:not(:last-child) {
+        @include breakpoint(large) {
+            margin-right: .9375rem; // 15px
+        }
+
+        @include breakpoint-down(large) {
+            margin-bottom: 3.75rem; //60px
+        }
+    }
+
+    &__icon {
+        height: 3rem; // 48px
+        margin-bottom: 2.25rem; // 36px
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

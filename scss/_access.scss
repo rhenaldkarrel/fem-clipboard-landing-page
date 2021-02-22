@@ -1,0 +1,17 @@
+.access {
+
+    text-align: center;
+
+    .container {
+        padding-bottom: 0;
+    }
+
+    img {
+        max-width: 50.625rem; // 810px
+
+        @include breakpoint-down(large) {
+            width: 100%;
+            padding: 10px;
+        }
+    }
+}
